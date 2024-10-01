@@ -95,7 +95,7 @@ numeric_cols = ['cost', 'lat', 'lng', 'votes', 'cost_2', 'rating_number']  # Lis
 # Generate histograms for the specified numeric columns.
 # Each column will have its distribution plotted in a grid of histograms.
 # Set the number of bins to 20 for each histogram and specify the figure size for better visibility.
-zomato_df[numeric_cols].hist(bins=20, figsize=(12, 10))
+# zomato_df[numeric_cols].hist(bins=20, figsize=(12, 10))
 
 # Set the overall title for the plot, adjusting the vertical position slightly above the subplots.
 # plt.suptitle('Distribution of Numeric Features', y=1.02)
