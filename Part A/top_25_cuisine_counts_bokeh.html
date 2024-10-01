@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="e57680a5-f891-4998-94c7-c3d3aeaae80a" data-root-id="p1040" style="display: contents;"></div>
+  
+    <script type="application/json" id="e50f70fa-779e-4e3f-9a1f-f5a4bdfa0deb">
+      {"3660f636-6ff8-4b55-b750-5a9fe3369e94":{"version":"3.4.1","title":"Bokeh Application","roots":[{"type":"object","name":"Figure","id":"p1040","attributes":{"width":1200,"x_range":{"type":"object","name":"FactorRange","id":"p1050","attributes":{"factors":["Cafe","Modern Australian","Chinese","Italian","Pizza","Thai","Japanese","Asian","Burger","Indian","Seafood","Vietnamese","Sushi","Pub Food","Bar Food","Sandwich","Coffee and Tea","Australian","Bakery","Healthy Food","Fast Food","Desserts","Vegetarian","Korean","Mediterranean"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p1042","attributes":{"start":0}},"x_scale":{"type":"object","name":"CategoricalScale","id":"p1051"},"y_scale":{"type":"object","name":"LinearScale","id":"p1052"},"title":{"type":"object","name":"Title","id":"p1043","attributes":{"text":"Top 25 Unique Cuisines"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1069","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1037","attributes":{"selected":{"type":"object","name":"Selection","id":"p1038","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1039"},"data":{"type":"map","entries":[["cuisines",{"type":"ndarray","array":["Cafe","Modern Australian","Chinese","Italian","Pizza","Thai","Japanese","Asian","Burger","Indian","Seafood","Vietnamese","Sushi","Pub Food","Bar Food","Sandwich","Coffee and Tea","Australian","Bakery","Healthy Food","Fast Food","Desserts","Vegetarian","Korean","Mediterranean"],"shape":[25],"dtype":"object","order":"little"}],["counts",{"type":"ndarray","array":{"type":"bytes","data":"WgwAANUDAABfAwAANAMAAOgCAAC/AgAAQgIAABgCAAD6AQAAkgEAAIQBAABpAQAATwEAAEwBAABKAQAAQAEAACEBAAANAQAA6gAAANgAAADQAAAAzgAAALwAAAC1AAAAkwAAAA=="},"shape":[25],"dtype":"int32","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p1070","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1071"}}},"glyph":{"type":"object","name":"VBar","id":"p1066","attributes":{"x":{"type":"field","field":"cuisines"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"counts"},"line_color":{"type":"value","value":"#1f77b4"},"fill_color":{"type":"value","value":"#1f77b4"}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p1067","attributes":{"x":{"type":"field","field":"cuisines"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"counts"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p1068","attributes":{"x":{"type":"field","field":"cuisines"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"counts"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1049"},"toolbar_location":null,"left":[{"type":"object","name":"LinearAxis","id":"p1058","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1059","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1060"},"axis_label":"Number of Restaurants","major_label_policy":{"type":"object","name":"AllLabels","id":"p1061"},"major_label_text_font_size":"10pt"}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p1053","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p1054"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p1055"},"axis_label":"Cuisines","major_label_orientation":"vertical","major_label_policy":{"type":"object","name":"AllLabels","id":"p1056"},"major_label_text_font_size":"10pt"}}],"center":[{"type":"object","name":"Grid","id":"p1057","attributes":{"axis":{"id":"p1053"},"grid_line_color":null}},{"type":"object","name":"Grid","id":"p1062","attributes":{"dimension":1,"axis":{"id":"p1058"}}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('e50f70fa-779e-4e3f-9a1f-f5a4bdfa0deb').textContent;
+              const render_items = [{"docid":"3660f636-6ff8-4b55-b750-5a9fe3369e94","roots":{"p1040":"e57680a5-f891-4998-94c7-c3d3aeaae80a"},"root_ids":["p1040"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>

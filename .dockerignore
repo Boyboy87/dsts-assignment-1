@@ -1,0 +1,22 @@
+# Ignore Jupyter notebook files
+*.ipynb
+**/*.ipynb
+
+# Ignore Word documents
+*.docx
+
+# Ignore hidden files and directories
+.*
+.*/**
+
+# Ignore HTML files
+**/*.html
+
+# Ignore Docker files and related
+Dockerfile
+
+# Ignore Git files
+.git/
+.gitignore
+.gitattributes
+
